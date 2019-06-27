@@ -1,6 +1,6 @@
-// Room names refer to their IDs in StarFighters76's maps in
-// https://gamefaqs.gamespot.com/nes/563420-the-goonies-ii/faqs
 [
+  // Room names refer to their IDs in StarFighters76's maps in
+  // https://gamefaqs.gamespot.com/nes/563420-the-goonies-ii/faqs
   {
     "name": "House A",
     "children": [

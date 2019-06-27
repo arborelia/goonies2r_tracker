@@ -45,7 +45,8 @@
                     ]
                 },
                 {
-                    "type": "map"
+                    "type": "map",
+                    "orientation": "vertical"
                 }
             ]
         }
