@@ -1,0 +1,13 @@
+﻿{
+  "name": "Goonies II Randomizer",
+  "game_name": "Goonies II Randomizer",
+  "platform": "nes",
+  "package_version": "0.1",
+  "package_uid": "goonies2r",
+  "author": "arborelia",
+  "variants": {
+    "standard": {
+      "display_name": "Standard Map Tracker"
+    }
+  }
+}

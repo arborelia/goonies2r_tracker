@@ -1,0 +1,10 @@
+﻿[
+  {
+    "name": "front",
+    "img": "images/map-front.png"
+  },
+  {
+    "name": "back",
+    "img": "images/map-back.png"
+  }
+]

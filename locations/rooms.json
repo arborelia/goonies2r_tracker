@@ -1,0 +1,91 @@
+// Room names refer to their IDs in StarFighters76's maps in
+// https://gamefaqs.gamespot.com/nes/563420-the-goonies-ii/faqs
+[
+  {
+    "name": "House A",
+    "children": [
+      {
+        "name": "Room 1",
+        "map_locations": [
+          {
+            "map": "front",
+            "x": 60,
+            "y": 100
+          }
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "capture_item": true,
+            "item_count": 1
+          },
+        ]
+      },
+      {
+        "name": "Room 2",
+        "map_locations": [
+          {
+            "map": "front",
+            "x": 100,
+            "y": 100
+          },
+          {
+            "map": "front",
+            "x": 100,
+            "y": 60
+          }
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "capture_item": true,
+            "item_count": 1
+          },
+          {
+            "name": "safe",
+            "capture_item": true,
+            "item_count": 1,
+            "access_rules": ["key"]
+          }
+        ]
+      },
+      {
+        "name": "Room 3",
+        "map_locations": [
+          {
+            "map": "front",
+            "x": 20,
+            "y": 140
+          }
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "capture_item": true,
+            "item_count": 1
+          },
+          {
+            "name": "safe",
+            "capture_item": true,
+            "item_count": 1,
+            "access_rules": ["key"]
+          }
+        ]
+      },
+      {
+        "name": "Room 4",
+        "map_locations": [
+          {"map": "front", "x": 100, "y": 140},
+          {"map": "back", "x": 100, "y": 140}
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "capture_item": true,
+            "item_count": 1
+          }
+        ]
+      },
+    ]
+  },
+]
