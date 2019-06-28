@@ -45,12 +45,12 @@
     "name": "Glasses",
     "type": "toggle",
     "img": "images/glasses.png",
-    "codes": "glasses"
+    "codes": "glasses,reveal"
   },
   {
     "name": "Transceiver",
     "type": "toggle",
     "img": "images/transceiver.png",
-    "codes": "transceiver"
+    "codes": "transceiver,reveal"
   }
 ]

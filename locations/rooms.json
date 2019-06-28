@@ -2,23 +2,27 @@
   // Room names refer to their IDs in StarFighters76's maps in
   // https://gamefaqs.gamespot.com/nes/563420-the-goonies-ii/faqs
   {
-    "name": "House A",
+    "name": "House",
     "children": [
       {
         "name": "Room 1",
         "map_locations": [
           {
             "map": "front",
-            "x": 60,
-            "y": 100
+            "x": 150,
+            "y": 250
           }
         ],
         "sections": [
           {
             "name": "Floor",
-            "capture_item": true,
             "item_count": 1
           },
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          }
         ]
       },
       {
@@ -26,26 +30,29 @@
         "map_locations": [
           {
             "map": "front",
-            "x": 100,
-            "y": 100
+            "x": 250,
+            "y": 250
           },
           {
             "map": "front",
-            "x": 100,
-            "y": 60
+            "x": 250,
+            "y": 150
           }
         ],
         "sections": [
           {
             "name": "Floor",
-            "capture_item": true,
             "item_count": 1
           },
           {
             "name": "safe",
-            "capture_item": true,
             "item_count": 1,
             "access_rules": ["key"]
+          },
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["ladder,key", "{ladder}"]
           }
         ]
       },
@@ -54,35 +61,316 @@
         "map_locations": [
           {
             "map": "front",
-            "x": 20,
-            "y": 140
+            "x": 50,
+            "y": 350
           }
         ],
         "sections": [
           {
             "name": "Floor",
-            "capture_item": true,
             "item_count": 1
           },
           {
-            "name": "safe",
-            "capture_item": true,
+            "name": "Goonie?",
             "item_count": 1,
-            "access_rules": ["key"]
+            "access_rules": ["key", "{}"]
           }
         ]
       },
       {
         "name": "Room 4",
         "map_locations": [
-          {"map": "front", "x": 100, "y": 140},
-          {"map": "back", "x": 100, "y": 140}
+          {"map": "front", "x": 250, "y": 350},
+          {"map": "back", "x": 250, "y": 350}
         ],
         "sections": [
           {
             "name": "Floor",
-            "capture_item": true,
             "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Warp 5",
+        "map_locations": [
+          {"map": "front", "x": 250, "y": 450},
+          {"map": "back", "x": 350, "y": 650}
+        ],
+        "sections": [
+          {
+            "name": "Warp Zone"
+          }
+        ]
+      },
+    ]
+  },
+  {
+    "name": "House 2",
+    "access_rules": ["ladder"],
+    "children": [
+      {
+        "name": "Room 52+53+54",
+        "map_locations": [
+          {"map": "front", "x": 450, "y": 450},
+          {"map": "back", "x": 450, "y": 450}
+        ],
+        "sections": [
+          {
+            "name": "Goonie? top",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          },
+          {
+            "name": "Goonie? bottom",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          },
+          {
+            "name": "Goonie? near water",
+            "item_count": 1,
+            "access_rules": ["key,hammer", "{hammer}"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Attic",
+    "access_rules": ["ladder"],
+    "children": [
+      {
+        "name": "Room 47",
+        "map_locations": [
+          {"map": "front", "x": 50, "y": 50}
+        ],
+        "sections": [
+          {
+            "name": "Goonie? upstairs",
+            "item_count": 1,
+            "access_rules": ["hammer,ladder,key", "{hammer,ladder}"]
+          },
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          }
+        ]
+      },
+      {
+        "name": "Room 49",
+        "map_locations": [
+          {"map": "front", "x": 350, "y": 150}
+        ],
+        "sections": [
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Orange Cave",
+    "children": [
+      {
+        "name": "Room 6",
+        "map_locations": [
+          {"map": "back", "x": 350, "y": 150}
+        ],
+        "sections": [
+          {
+            "name": "Punch wall",
+            "item_count": 1,
+            "access_rules": []
+          },
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key,hammer", "{hammer}"]
+          }
+        ]
+      },
+      {
+        "name": "Room 8",
+        "map_locations": [
+          {"map": "back", "x": 50, "y": 250},
+          {"map": "front", "x": 1450, "y": 750},
+        ],
+        "sections": [
+          {
+            "name": "Orange side goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          },
+          {
+            "name": "Volcano side goonie?",
+            "item_count": 1,
+            "access_rules": ["ladder,key"]
+          }
+        ]
+      },
+      {
+        "name": "Room 7",
+        "map_locations": [
+          {"map": "back", "x": 350, "y": 450},
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "item_count": 1
+          },
+          {
+            "name": "Safe",
+            "item_count": 1,
+            "access_rules": ["key"]
+          },
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Orange Cave 2",
+    "access_rules": ["hammer,ladder"],
+    "children": [
+      {
+        "name": "Room 50",
+        "map_locations": [
+          {"map": "back", "x": 450, "y": 250}
+        ],
+        "sections": [
+          {
+            "name": "Safe",
+            "item_count": 1,
+            "access_rules": ["key,ladder"]
+          },
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          }
+        ]
+      },
+    ]
+  },
+  {
+    "name": "Red Cave",
+    "children": [
+      {
+        "name": "Room 9",
+        "map_locations": [
+          {"map": "back", "x": 50, "y": 550}
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "item_count": 1,
+            "access_rules": ["reveal"]
+          }
+        ]
+      },
+      {
+        "name": "Room 10",
+        "map_locations": [
+          {"map": "front", "x": 350, "y": 550},
+          {"map": "back", "x": 350, "y": 550}
+        ],
+        "sections": [
+          {
+            "name": "Punch door",
+            "item_count": 1
+          },
+          {
+            "name": "Punch lady",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Room 13",
+        "map_locations": [
+          {"map": "back", "x": 650, "y": 650}
+        ],
+        "sections": [
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Bridge approach",
+    "children": [
+      {
+        "name": "Room 15",
+        "map_locations": [
+          {"map": "front", "x": 150, "y": 550}
+        ],
+        "sections": [
+          {
+            "name": "Punch wall",
+            "item_count": 1
+          },
+          {
+            "name": "Floor",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Bridge bombable room",
+        "map_locations": [
+          {"map": "front", "x": 750, "y": 450}
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "item_count": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Purple cave",
+    "children": [
+      {
+        "name": "Room 19",
+        "map_locations": [
+          {"map": "front", "x": 1250, "y": 650}
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "item_count": 1
+          }
+        ]
+      },
+      {
+        "name": "Room 23",
+        "access_rules": ["reveal"],
+        "map_locations": [
+          {"map": "front", "x": 1450, "y": 450},
+          {"map": "back", "x": 1250, "y": 150},
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "item_count": 1
+          },
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
           }
         ]
       }
