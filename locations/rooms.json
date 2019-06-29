@@ -126,6 +126,11 @@
             "access_rules": ["key", "{}"]
           },
           {
+            "name": "Goonie? under ladder",
+            "item_count": 1,
+            "access_rules": ["key,ladder,hammer", "{ladder,hammer}"]
+          },
+          {
             "name": "Goonie? near water",
             "item_count": 1,
             "access_rules": ["key,hammer", "{hammer}"]
@@ -145,11 +150,6 @@
         ],
         "sections": [
           {
-            "name": "Goonie? upstairs",
-            "item_count": 1,
-            "access_rules": ["hammer,ladder,key", "{hammer,ladder}"]
-          },
-          {
             "name": "Goonie?",
             "item_count": 1,
             "access_rules": ["key", "{}"]
@@ -163,9 +163,9 @@
         ],
         "sections": [
           {
-            "name": "Goonie?",
+            "name": "Safe?",
             "item_count": 1,
-            "access_rules": ["key", "{}"]
+            "access_rules": ["key"]
           }
         ]
       }
@@ -218,7 +218,7 @@
         ],
         "sections": [
           {
-            "name": "Floor",
+            "name": "Hit wall",
             "item_count": 1
           },
           {
@@ -237,7 +237,7 @@
   },
   {
     "name": "Orange Cave 2",
-    "access_rules": ["hammer,ladder"],
+    "access_rules": ["ladder"],
     "children": [
       {
         "name": "Room 50",
@@ -246,14 +246,14 @@
         ],
         "sections": [
           {
-            "name": "Safe",
-            "item_count": 1,
-            "access_rules": ["key,ladder"]
-          },
-          {
             "name": "Goonie?",
             "item_count": 1,
             "access_rules": ["key", "{}"]
+          },
+          {
+            "name": "Floor below",
+            "item_count": 1,
+            "access_rules": ["reveal,ladder"]
           }
         ]
       },
@@ -352,6 +352,11 @@
           {
             "name": "Floor",
             "item_count": 1
+          },
+          {
+            "name": "Safe",
+            "item_count": 1,
+            "access_rules": ["key"]
           }
         ]
       },
@@ -364,7 +369,7 @@
         ],
         "sections": [
           {
-            "name": "Floor",
+            "name": "Punch wall",
             "item_count": 1
           },
           {
@@ -378,6 +383,7 @@
   },
   {
     "name": "Green cave",
+    "access_rules": ["hammer"],
     "children": [
       {
         "name": "Room 24",
@@ -399,7 +405,7 @@
         ],
         "sections": [
           {
-            "name": "Floor",
+            "name": "Punch door",
             "item_count": 1
           },
           {
@@ -500,12 +506,7 @@
             "name": "Safe",
             "item_count": 1,
             "access_rules": ["key"]
-          },
-          {
-            "name": "Goonie?",
-            "item_count": 1,
-            "access_rules": ["key", "{}"]
-          }          
+          }
         ]
       },
       {
@@ -611,9 +612,13 @@
         ],
         "sections": [
           {
-            "name": "Safe",
+            "name": "Punch wall",
             "item_count": 1,
             "access_rules": ["key"]
+          },
+          {
+            "name": "Floor",
+            "item_count": 1
           }
         ]
       },
@@ -656,6 +661,19 @@
     "access_rules": ["hammer,ladder", "spring_shoes"],
     "children": [
       {
+        "name": "Room 36",
+        "map_locations": [
+          {"map": "front", "x": 1150, "y": 250},
+          {"map": "back", "x": 1150, "y": 250}
+        ],
+        "sections": [
+          {
+            "name": "Floor",
+            "item_count": 1
+          }
+        ]
+      },
+      {
         "name": "Room 38",
         "map_locations": [
           {"map": "front", "x": 1350, "y": 350}
@@ -694,9 +712,9 @@
         ],
         "sections": [
           {
-            "name": "Floor",
+            "name": "Safe",
             "item_count": 1,
-            "access_rules": ["ladder,hammer"]
+            "access_rules": ["ladder,hammer,reveal,key"]
           }
         ]
       }
@@ -713,7 +731,7 @@
         ],
         "sections": [
           {
-            "name": "Floor",
+            "name": "Punch wall",
             "item_count": 1,
             "access_rules": ["ladder,hammer"]
           }
@@ -723,6 +741,19 @@
         "name": "Room 43",
         "map_locations": [
           {"map": "back", "x": 1350, "y": 350}
+        ],
+        "sections": [
+          {
+            "name": "Goonie?",
+            "item_count": 1,
+            "access_rules": ["key", "{}"]
+          },
+        ]
+      },
+      {
+        "name": "Dumb pit door",
+        "map_locations": [
+          {"map": "back", "x": 1450, "y": 350}
         ],
         "sections": [
           {
